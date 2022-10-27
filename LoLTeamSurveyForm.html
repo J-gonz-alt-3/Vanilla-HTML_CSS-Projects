@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>League of Legends: LCS Team Survey Form</title>
+    <link rel="stylesheet" href="LoLSurvey.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">League of Legends: LCS Team Survey Form</h1>
+        <p id="description" class="description text-center">Thank you for taking the time to fill out this survey!
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name<input id="name" type="text" placeholder="Enter your name" class="form-control" required/>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email<input id="email" type="email" placeholder="Enter your email" class="form-control" required/>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age
+            <span class="clue">(optional)</span>
+          </label>
+          <input id="number" type="number" name="age" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+          <p>Choose Your Favorite LCS Team</p>
+          <select id="dropdown" name="team">
+            <option value="">(select one)</option>
+            <option value="cloud9">Cloud 9</option>
+            <option value="100Thieves">100 Thieves</option>
+          <option value="TSM">TSM</option>
+            <option value="TeamLiquid">Team Liquid</option>
+            <option value="EvilGeniuses">Evil Geniuses</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div>
+          <p>Most impactful Position?</p>
+          <label for="jg"><input id="jg" type="radio" value="jg" name="best-role" class="input-radio">Jungle</label>
+          <label for="mid"><input id="mid" type="radio" value="mid" name="best-role" class="input-radio">Mid Lane</label>
+        </div>
+        <div class="form-group">
+          <p>Who is the LCS Goat?</p>
+          <label for="bjerg"><input id="bjerg" type="radio" value="bjerg" name="NA-Goat" class="input-radio">Bjergson</label>
+          <label for="dl"><input id="dl" type="radio" value="dl" name="NA-Goat" class="input-radio">Doublelift</label>
+        </div>
+
+        <div class="form-group">
+          <p>What Event is Your Favorite?<span class="clue">(Check all that apply)</span>
+          </p>
+          <label for="worlds"><input type="checkbox" id="worlds" value="worlds" class="input-checkbox"/> LoL Worlds Tournament</label>
+          <label for="msi"><input type="checkbox" id="msi" value="msi" class="input-checkbox"/>Mid Season Invitational</label>
+        </div>
+        <div class="form-group">
+          <p>Any further comments or suggestions on how to improve NA LCS?</p>
+          <textarea id="additional comments" name="additional comments" class="input-textarea" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" value="Submit" class="submit-button"/>
+          Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
