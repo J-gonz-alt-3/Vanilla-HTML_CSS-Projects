@@ -1,6 +1,6 @@
 # Practice HTML CSS Projects
 
-No Use of any front-end JavaScript libraries/frameworks in these projects.
+No use of any front-end JavaScript libraries/frameworks in these projects.
 
 The goal of completing these Vanilla (HTML/CSS) projects was to understand/practice the fundamentals.
 
