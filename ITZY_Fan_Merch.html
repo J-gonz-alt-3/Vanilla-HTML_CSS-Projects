@@ -1,27 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="ITZY_FM.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./ITZY_FM.css" />
+    <title>ITZY Merch Store</title>
   </head>
   <body>
-    <div id="page-wrapper">
-      <header id="header">
-        <div class="logo">
-          <img id="header-img" src="https://ih1.redbubble.net/image.1118200683.2843/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="ITZY MERCH LOGO">ITZY Official Merch Store
-        </div>
-        <nav id="nav-bar">
-          <ul>
-            <li><a class="nav-link" href="#features">Features</a></li>
-            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-            <li><a class="nav-link" href="#pricing">Pricing</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="container"></div>
-      <section id="hero">
-        <section id="hero">
-        <h2>Shop exclusive music & box sets from the Itzy Store.</h2>
+    <header id="header">
+      <nav id="nav-bar">
+      <a href="#" class="logo">
+        <img id="header-img" src="https://static.wikia.nocookie.net/logopedia/images/4/47/Crazy_In_Love_group_logo_-_ITZY.png/revision/latest/scale-to-width-down/250?cb=20211130132719" alt="ITZY MERCH LOGO" />
+      </a>
+      <h1>
+          ITZY Merch Store
+        </h1>
+      <ul>
+        <li class="nav-item">
+          <a href="#home" class="nav-link" id="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#register" class="nav-link" id="nav-link">Our Promise</a>
+        </li>
+        <li class="nav-item">
+          <a href="#products" class="nav-link" id="nav-link"
+            >Products</a
+          >
+        </li>
+    </ul>
+    </nav>
+    </header>
+     <section class="hero" id="register">
+      <div class="intro-text">
+        <h1>
+          <span id="home"> Your One Stop Shop for the Lastest ITZY Merch</span> <br />
+        </h1>
+      </div>
+      <div class="i-frame">
+        <iframe id="video"
+          width="460"
+          height="315"
+          src="https://www.youtube.com/embed/-5_DdyjvJGU" title="ITZY OFFICIAL LIGHT RING POP-UP STORE EP.01"
+          title="YouTube video player"
+          frameborder="10"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        ></iframe>
+      </div>
+    </section>
+    
+    <section id="hero"> 
+      <h2>Sign up to be the first to receive updates on new exclusive ITZY Merch as it drops!</h2>            
         <form id="form" action="https://www.freecodecamp.com/email-submit">
           <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
           <input id="submit" type="submit" value="Get Started" class="btn">
@@ -30,7 +58,6 @@
       <div class="container">
         <section id="features">
           <div class="grid">
-            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
             <div class="desc">
               <h2>Premium Materials</h2>
               <p>
@@ -39,7 +66,6 @@
             </div>
           </div>
           <div class="grid">
-            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
             <div class="desc">
               <h2>Fast Shipping</h2>
               <p>
@@ -48,9 +74,6 @@
             </div>
           </div>
           <div class="grid">
-            <div class="icon">
-              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
-            </div>
             <div class="desc">
               <h2>Quality Assurance</h2>
               <p>
@@ -60,12 +83,8 @@
             </div>
           </div>
         </section>
-        <section id="how-it-works">
-          <iframe id="video" height="315" src="https://www.youtube.com/embed/-5_DdyjvJGU" title="ITZY OFFICIAL LIGHT RING POP-UP STORE EP.01">
-          </iframe>
-        </section>
-        <section id="pricing">
-          <div class="product" id="tenor">
+        <section id="products">
+          <div class="product">
             <div class="level">Dreamus ITZY - NOT Shy Album</div>
             <h2>$20</h2>
             <ol>
@@ -76,7 +95,7 @@
             </ol>
             <button class="btn">Select</button>
           </div>
-          <div class="product" id="bass">
+          <div class="product">
             <div class="level">ITZY Crazy in Love Album</div>
             <h2>$30</h2>
             <ol>
@@ -87,7 +106,7 @@
             </ol>
             <button class="btn">Select</button>
           </div>
-          <div class="product" id="valve">
+          <div class="product">
             <div class="level">ITZY Checkmate Mini Album</div>
             <h2>$30</h2>
             <ol>
@@ -107,7 +126,4 @@
           </ul>
           <span>Copyright 2021, JYP Entertainment</span>
         </footer>
-      </div>
-    </div>
-  </body>
 </html>
